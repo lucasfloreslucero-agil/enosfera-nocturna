@@ -430,3 +430,9 @@ textarea.ctl { padding: .9rem 1rem; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Simplificación: comunidad en cuatro columnas */
+.cols4 { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.center-head > div { display: flex; justify-content: center; }
+@media (max-width: 991px) { .cols4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 479px) { .cols4 { grid-template-columns: 1fr; } }
