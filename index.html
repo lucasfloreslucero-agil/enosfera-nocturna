@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enosfera · El mundo del vino en tus manos</title>
+<meta name="description" content="Enosfera fue creada por y para quienes hacen, comparten y disfrutan el mundo del vino. Un espacio para compartir contenidos, construir comunidades, ofrecer experiencias y desarrollar nuevos proyectos.">
+<!-- En revisión: sacar esta línea cuando la landing esté lista para difundirse. -->
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Inter:wght@400;500;600&family=Geist+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/font/lucide.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a href="#inicio" class="nav__logo" aria-label="Enosfera, ir al inicio">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><path d="M6.08 30 55.06 44A26 26 0 0 1 6.08 30Z" fill="var(--orange)"/><circle cx="32" cy="32" r="26" fill="none" stroke="#fff" stroke-width="6"/></svg>
+      <span>enosfera</span>
+    </a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#que-hacer">Qué podés hacer</a>
+      <a href="#preventas">Preventas</a>
+      <a href="#pagos">Pagos</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <button type="button" class="button is-small" data-open>Sumate</button>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. Hero -->
+<section id="inicio" class="hero">
+  <div class="container hero__in">
+    <span class="eyebrow eyebrow--dark hero__fade">El mundo del vino en tus manos</span>
+    <div class="hero-title">
+      <h1 class="hero-title__h1">Un espacio propio para conectar con el mundo del vino.</h1>
+    </div>
+    <p class="hero__sub hero__fade">Compartí lo que hacés, construí una comunidad, ofrecé experiencias y desarrollá nuevos proyectos alrededor del vino.</p>
+    <p class="hero__who hero__fade">Creado por y para quienes hacen, comparten y disfrutan el mundo del vino.</p>
+    <div class="hero__actions hero__fade">
+      <button type="button" class="button" data-open="proyecto">Presentá tu proyecto</button>
+      <button type="button" class="button is-secondary" data-open="miembro">Sumate como miembro</button>
+    </div>
+    <p class="hero__note hero__fade">Durante la etapa inicial incorporamos participantes de manera gradual.</p>
+  </div>
+  <div class="hero__media" aria-hidden="true">
+    <div class="hero__glow"></div>
+    <div class="hero__frame"><img src="assets/img/copas-barricas.jpg" alt="" width="960" height="540"></div>
+  </div>
+</section>
+
+<!-- 2. Para quién -->
+<section id="para-quien" class="section is-light">
+  <div class="container container--md">
+    <div class="center-head">
+      <span class="eyebrow" data-reveal>Para quién es Enosfera</span>
+      <h2 class="h2" data-reveal>Quienes hacen, comparten y disfrutan el vino, en una misma comunidad.</h2>
+      <p class="text-lg muted" data-reveal>Cada persona se acerca al vino desde un lugar distinto. Enosfera reúne a todas en un espacio para descubrir, compartir, conectar y desarrollar proyectos.</p>
+    </div>
+
+    <div class="diagram" id="diagram">
+      <div class="diagram__core" data-reveal>
+        <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><path d="M6.08 30 55.06 44A26 26 0 0 1 6.08 30Z" fill="var(--orange)"/><circle cx="32" cy="32" r="26" fill="none" stroke="#000" stroke-width="6"/></svg>
+        <span>enosfera</span>
+      </div>
+      <svg class="diagram__lines" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M500 0 C500 60 167 60 167 120"/>
+        <path d="M500 0 L500 120"/>
+        <path d="M500 0 C500 60 833 60 833 120"/>
+      </svg>
+      <div class="diagram__cards">
+        <article class="side-card" data-reveal>
+          <span class="tag">Hacen</span>
+          <h3 class="h4">Quienes hacen el vino</h3>
+          <p class="side-card__who">Bodegas, productores, fincas y comercios.</p>
+          <p>Presentá tus productos, lanzá nuevas etiquetas y conectá con las personas que eligen tus vinos.</p>
+          <button type="button" class="link-arrow" data-open="proyecto">Presentá tu proyecto <i class="eno-icon icon-arrow-right" aria-hidden="true"></i></button>
+        </article>
+        <article class="side-card" data-reveal>
+          <span class="tag">Comparten</span>
+          <h3 class="h4">Quienes lo comparten</h3>
+          <p class="side-card__who">Sommeliers, enólogos, comunicadores, docentes y profesionales del sector.</p>
+          <p>Compartí tus conocimientos, organizá experiencias y construí una comunidad alrededor de tu trabajo.</p>
+          <button type="button" class="link-arrow" data-open="proyecto">Presentá tu proyecto <i class="eno-icon icon-arrow-right" aria-hidden="true"></i></button>
+        </article>
+        <article class="side-card" data-reveal>
+          <span class="tag">Disfrutan</span>
+          <h3 class="h4">Quienes lo disfrutan</h3>
+          <p class="side-card__who">Personas que quieren descubrirlo, aprender y vivirlo de cerca.</p>
+          <p>Descubrí vinos e historias, aprendé de quienes saben y participá de experiencias y lanzamientos.</p>
+          <button type="button" class="link-arrow" data-open="miembro">Sumate como miembro <i class="eno-icon icon-arrow-right" aria-hidden="true"></i></button>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Cómo funciona: lista sticky con imágenes en crossfade -->
+<section id="como-funciona" class="built is-light">
+  <div class="built__sticky">
+    <div class="container built__grid">
+      <div class="built__text">
+        <span class="eyebrow">Cómo funciona</span>
+        <h2 class="h2">Un ecosistema para el mundo del vino.</h2>
+        <p class="muted">Enosfera es una plataforma digital que reúne en un mismo espacio a quienes hacen, comparten y disfrutan el mundo del vino. Permite compartir contenidos, construir comunidades, ofrecer experiencias, comercializar productos y desarrollar proyectos mediante propuestas de compra anticipada.</p>
+        <ol class="built__list">
+          <li class="built__item is-active" data-step="0"><span class="mono">01</span><div><h3 class="h5">Creá tu espacio</h3><p>Presentá tu proyecto, compartí contenidos y reuní a tu comunidad.</p></div></li>
+          <li class="built__item" data-step="1"><span class="mono">02</span><div><h3 class="h5">Compartí tus propuestas</h3><p>Publicá experiencias, cursos, productos y contenidos exclusivos.</p></div></li>
+          <li class="built__item" data-step="2"><span class="mono">03</span><div><h3 class="h5">Hacé crecer tus proyectos</h3><p>Generá oportunidades comerciales y lanzá preventas para desarrollar nuevas propuestas.</p></div></li>
+        </ol>
+      </div>
+      <div class="built__media" aria-hidden="true">
+        <img class="built__img is-active" src="assets/img/hero-racimo.jpg" alt="" data-img="0">
+        <img class="built__img" src="assets/img/cata-mesa.jpg" alt="" data-img="1">
+        <img class="built__img" src="assets/img/cosecha-cajon.jpg" alt="" data-img="2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Story: el propósito, pineado con cambio de fondo -->
+<section id="proposito" class="story" aria-label="El propósito">
+  <div class="story__sticky">
+    <div class="story__block" data-story="0">
+      <span class="eyebrow">El propósito</span>
+      <p class="story__phrase">Las redes generan visibilidad. Construir una comunidad requiere mucho más.</p>
+    </div>
+    <div class="story__block" data-story="1">
+      <span class="mono story__n">01</span>
+      <p class="story__phrase">Tu audiencia puede convertirse en una comunidad.</p>
+      <p class="story__text">Compartir conocimientos, experiencias y propuestas permite generar vínculos que van más allá de una publicación.</p>
+    </div>
+    <div class="story__block" data-story="2">
+      <span class="mono story__n">02</span>
+      <p class="story__phrase">Organizar y comercializar tus propuestas requiere herramientas.</p>
+      <p class="story__text">Gestionar inscripciones, contenidos, pagos y participantes desde diferentes plataformas puede volver complejo el desarrollo de tus actividades.</p>
+    </div>
+    <div class="story__block" data-story="3">
+      <span class="mono story__n">03</span>
+      <p class="story__phrase">Los proyectos necesitan nuevas formas de crecer.</p>
+      <p class="story__text">Desarrollar productos, experiencias o nuevas líneas requiere planificación y recursos. Tu comunidad puede ser parte de ese proceso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Herramientas -->
+<section id="herramientas" class="section is-light">
+  <div class="container">
+    <div class="split-head">
+      <div>
+        <span class="eyebrow" data-reveal>Herramientas</span>
+        <h2 class="h2" data-reveal>Todo lo que necesitás para desarrollar tu comunidad.</h2>
+      </div>
+      <button type="button" class="button is-dark" data-open="proyecto" data-reveal>Presentá tu proyecto</button>
+    </div>
+    <div class="tools">
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-circle-user-round" aria-hidden="true"></i><span class="mono">01</span></div><h3 class="h5">Espacio propio</h3><p>Un perfil personalizado para presentar tu proyecto y compartirlo con tu comunidad.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-image" aria-hidden="true"></i><span class="mono">02</span></div><h3 class="h5">Contenidos</h3><p>Publicaciones abiertas y exclusivas en diferentes formatos.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-wine" aria-hidden="true"></i><span class="mono">03</span></div><h3 class="h5">Experiencias</h3><p>Organizá catas, visitas, cursos y encuentros con inscripción y cupos.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-ticket" aria-hidden="true"></i><span class="mono">04</span></div><h3 class="h5">Preventas</h3><p>Presentá nuevos proyectos y recibí compras anticipadas de tu comunidad.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-wallet" aria-hidden="true"></i><span class="mono">05</span></div><h3 class="h5">Gestión de pagos</h3><p>Integración con Mercado Pago para gestionar los cobros.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-receipt-text" aria-hidden="true"></i><span class="mono">06</span></div><h3 class="h5">Administración</h3><p>Accedé a comprobantes, inscripciones y herramientas de seguimiento.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-chart-column" aria-hidden="true"></i><span class="mono">07</span></div><h3 class="h5">Estadísticas</h3><p>Conocé la actividad y la evolución de tu comunidad.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-gift" aria-hidden="true"></i><span class="mono">08</span></div><h3 class="h5">Regalos y transferencias</h3><p>Permití que las experiencias y determinados contenidos puedan regalarse o transferirse.</p></article>
+      <article class="tool" data-reveal><div class="tool__top"><i class="eno-icon icon-star" aria-hidden="true"></i><span class="mono">09</span></div><h3 class="h5">Reputación</h3><p>Construí un perfil respaldado por las valoraciones de quienes participan de tus propuestas.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Qué podés hacer -->
+<section id="que-hacer" class="section is-light section--tight-top">
+  <div class="container">
+    <div class="split-head">
+      <div>
+        <span class="eyebrow" data-reveal>Qué podés hacer</span>
+        <h2 class="h2" data-reveal>Diferentes formas de participar del mundo del vino.</h2>
+      </div>
+      <p class="muted small split-head__note" data-reveal>Los ejemplos son ilustrativos: las personas, los proyectos y los productos son ficticios.</p>
+    </div>
+    <div class="cards4">
+      <article class="card" data-reveal>
+        <div class="card__img"><img src="assets/img/cata-mesa.jpg" alt="Copas servidas en una mesa al aire libre, frente al viñedo" loading="lazy" width="960" height="540"></div>
+        <div class="card__tags"><span class="pill">Presencial</span><span class="pill">Virtual</span></div>
+        <h3 class="card__title">Catas y experiencias</h3>
+        <p>Organizá encuentros presenciales y virtuales, visitas a bodegas, degustaciones y propuestas de maridaje.</p>
+        <p class="card__ex"><b>Ejemplo:</b> una sommelier organiza una cata de 12 lugares, con inscripción y lista de participantes.</p>
+        <i class="eno-icon icon-arrow-right card__arrow" aria-hidden="true"></i>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card__img"><img src="assets/img/copas-barricas.jpg" alt="Cinco copas con vinos de distintos colores sobre una mesa de madera" loading="lazy" width="960" height="540"></div>
+        <div class="card__tags"><span class="pill">Contenido</span><span class="pill">Formación</span></div>
+        <h3 class="card__title">Cursos y contenidos exclusivos</h3>
+        <p>Compartí conocimientos, publicaciones especializadas, material educativo y propuestas de formación.</p>
+        <p class="card__ex"><b>Ejemplo:</b> un enólogo publica una guía de iniciación a la cata en seis videos.</p>
+        <i class="eno-icon icon-arrow-right card__arrow" aria-hidden="true"></i>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card__img"><img src="assets/img/cosecha-cajon.jpg" alt="Cajón con uvas tintas recién cosechadas" loading="lazy" width="960" height="540"></div>
+        <div class="card__tags"><span class="pill">Preventa</span></div>
+        <h3 class="card__title">Lanzamiento de nuevos productos</h3>
+        <p>Presentá nuevas etiquetas y proyectos mediante propuestas de compra anticipada dirigidas a tu comunidad.</p>
+        <p class="card__ex"><b>Ejemplo:</b> una finca presenta en preventa la primera cosecha de una nueva línea.</p>
+        <i class="eno-icon icon-arrow-right card__arrow" aria-hidden="true"></i>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card__img"><img src="assets/img/vid-invierno.jpg" alt="Manos con guantes trabajando una vid en invierno" loading="lazy" width="960" height="720"></div>
+        <div class="card__tags"><span class="pill">Sin costo</span></div>
+        <h3 class="card__title">Comunidades</h3>
+        <p>Compartí intereses, descubrí nuevos proyectos y conectá con otras personas que forman parte del mundo del vino.</p>
+        <p class="card__ex"><b>Sin costo:</b> crear un espacio y participar de la comunidad es gratuito.</p>
+        <i class="eno-icon icon-arrow-right card__arrow" aria-hidden="true"></i>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Compras anticipadas -->
+<section id="preventas" class="section is-press">
+  <div class="container">
+    <div class="press-head">
+      <span class="press-head__label" data-reveal>Compras anticipadas</span>
+      <h2 class="h2" data-reveal>Los próximos proyectos comienzan con tu comunidad.</h2>
+      <p class="text-lg press-muted" data-reveal>Presentá nuevos productos, etiquetas y experiencias a través de propuestas de compra anticipada. Tu comunidad puede acompañar cada lanzamiento desde el comienzo y acceder a beneficios exclusivos.</p>
+    </div>
+
+    <h3 class="h5 press-sub" data-reveal>Una nueva forma de lanzar productos</h3>
+    <ol class="press-cards">
+      <li class="press-card" data-reveal><div class="press-card__meta"><span class="press-card__src">Paso 01</span></div><p class="press-card__title">Definís el producto, la cantidad mínima y el plazo de la preventa.</p></li>
+      <li class="press-card" data-reveal><div class="press-card__meta"><span class="press-card__src">Paso 02</span></div><p class="press-card__title">Las personas interesadas realizan su compra anticipada.</p></li>
+      <li class="press-card" data-reveal><div class="press-card__meta"><span class="press-card__src">Paso 03</span></div><p class="press-card__title">Si se alcanza el objetivo establecido, se confirma la operación.</p></li>
+      <li class="press-card" data-reveal><div class="press-card__meta"><span class="press-card__src">Paso 04</span></div><p class="press-card__title">Cada compra cuenta con un comprobante digital único.</p><p class="press-card__text">Respalda la compra y permite gestionar el posterior canje del producto.</p></li>
+    </ol>
+
+    <div class="pre-grid">
+      <div class="pre-grid__col">
+        <div class="note-dark" data-reveal>
+          <span class="mono note-dark__k">Importante</span>
+          <p class="h5">Una compra anticipada, no una inversión.</p>
+          <p class="press-muted">Quien participa adquiere un producto o servicio antes de su disponibilidad. No implica participación societaria, rentabilidad ni promesa de retorno financiero.</p>
+        </div>
+        <div class="row-dark" data-reveal>
+          <i class="eno-icon icon-bell" aria-hidden="true"></i>
+          <div><p class="row-dark__t">Mantené informada a tu comunidad durante todo el proceso.</p><p class="press-muted">Compartí cómo avanzan la cosecha, la elaboración y el embotellado.</p></div>
+        </div>
+        <div data-reveal><button type="button" class="button" data-open="preventa">Impulsá un nuevo proyecto</button></div>
+      </div>
+
+      <div class="pre-grid__col" aria-label="Ejemplo ilustrativo de una preventa y de su comprobante">
+        <div class="dcard" data-reveal>
+          <div class="dcard__head"><span class="mono">Preventa · Finca Dos Acequias</span><span class="pill pill--dark">Ejemplo ilustrativo</span></div>
+          <p class="h4">Criolla, primera cosecha</p>
+          <p class="press-muted small">Caja de tres botellas de criolla, una variedad histórica de Mendoza, de un parral de 60 años.</p>
+          <div class="dcard__num"><b>86</b> <span>de 100 cajas de cantidad mínima</span></div>
+          <div class="dbar" role="img" aria-label="86 cajas compradas sobre una cantidad mínima de 100"><div style="width:86%"></div></div>
+          <dl class="dcard__kv">
+            <div><dt>Cierre de la preventa</dt><dd>28 de febrero de 2027</dd></div>
+            <div><dt>Entrega estimada</dt><dd>Octubre de 2027</dd></div>
+            <div><dt>Precio final · caja de tres</dt><dd>$ 54.000</dd></div>
+          </dl>
+        </div>
+        <div class="dcard dcard--ticket" data-reveal>
+          <div class="dcard__head"><span class="mono">Comprobante digital</span><span class="pill pill--ok"><i class="eno-icon icon-check" aria-hidden="true"></i>Preventa confirmada</span></div>
+          <p class="dcard__code">N.º ENO-0427-1183</p>
+          <dl class="dcard__kv dcard__kv--3">
+            <div><dt>Producto</dt><dd>Criolla, primera cosecha · caja de tres</dd></div>
+            <div><dt>Productor</dt><dd>Finca Dos Acequias</dd></div>
+            <div><dt>A nombre de</dt><dd>Carolina Méndez</dd></div>
+          </dl>
+          <ol class="track">
+            <li class="is-done">Compra registrada</li>
+            <li class="is-done">Preventa confirmada</li>
+            <li>Producto canjeado</li>
+          </ol>
+          <p class="press-muted small dcard__foot">Este comprobante respalda la compra y se utiliza para el canje del producto cuando esté disponible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Un ecosistema conectado + miembros -->
+<section id="comunidad" class="section is-light">
+  <div class="container">
+    <div class="center-head">
+      <span class="eyebrow" data-reveal>Un ecosistema conectado</span>
+      <h2 class="h2" data-reveal>Una comunidad que conecta a todo el mundo del vino.</h2>
+    </div>
+    <div class="cols3">
+      <div class="col-item" data-reveal><i class="eno-icon icon-compass" aria-hidden="true"></i><h3 class="h5">Descubrí nuevos proyectos</h3><p>Conocé productores, profesionales y creadores con tus mismos intereses.</p></div>
+      <div class="col-item" data-reveal><i class="eno-icon icon-user-plus" aria-hidden="true"></i><h3 class="h5">Seguí a quienes te inspiran</h3><p>Recibí novedades sobre publicaciones, experiencias y nuevos lanzamientos.</p></div>
+      <div class="col-item" data-reveal><i class="eno-icon icon-users" aria-hidden="true"></i><h3 class="h5">Generá nuevas conexiones</h3><p>Interactuá con otras comunidades y descubrí propuestas que amplían tu experiencia en el mundo del vino.</p></div>
+    </div>
+
+    <div id="miembros" class="members">
+      <div class="members__head">
+        <span class="eyebrow" data-reveal>Para quienes disfrutan el vino</span>
+        <h2 class="h3" data-reveal>Una forma más cercana de vivir el vino.</h2>
+        <p class="muted" data-reveal>Si disfrutás el vino y querés conocerlo más, Enosfera te acerca a las personas y los proyectos que lo hacen posible.</p>
+        <div data-reveal><button type="button" class="button is-dark" data-open="miembro">Sumate como miembro</button></div>
+      </div>
+      <div class="members__grid">
+        <div class="member" data-reveal><span class="mono">Descubrí</span><p>Vinos, productores e historias que no siempre llegan a las redes.</p></div>
+        <div class="member" data-reveal><span class="mono">Aprendé</span><p>Contenidos, cursos y recomendaciones de profesionales del vino.</p></div>
+        <div class="member" data-reveal><span class="mono">Participá</span><p>Catas, visitas y encuentros, presenciales y virtuales.</p></div>
+        <div class="member" data-reveal><span class="mono">Accedé antes</span><p>Nuevos lanzamientos en preventa, desde el comienzo de cada proyecto.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Pagos y gestión -->
+<section id="pagos" class="section is-light section--tight-top">
+  <div class="container pay">
+    <div class="pay__text">
+      <span class="eyebrow" data-reveal>Pagos y gestión</span>
+      <h2 class="h2" data-reveal>Una gestión de pagos integrada y transparente.</h2>
+      <p class="muted" data-reveal>Enosfera integra herramientas de pago para facilitar la comercialización de productos, contenidos y experiencias dentro de la plataforma.</p>
+      <ol class="lines" data-reveal>
+        <li><span class="mono">01</span>Configurás tu cuenta de Mercado Pago.</li>
+        <li><span class="mono">02</span>Definís el precio de tus propuestas.</li>
+        <li><span class="mono">03</span>Los compradores realizan sus operaciones desde Enosfera.</li>
+        <li><span class="mono">04</span>Consultás la información de tus ventas y operaciones.</li>
+      </ol>
+      <h3 class="h5 pay__sub" data-reveal>Qué paga y qué recibe cada parte</h3>
+      <dl class="costs" data-reveal>
+        <div><dt>Precio de la propuesta</dt><dd>Lo definís vos. Es lo que recibís por cada venta, antes de la comisión de Mercado Pago.</dd></div>
+        <div><dt>Cargo por servicio de Enosfera</dt><dd>Lo paga quien compra. Está incluido en el precio final que ve antes de pagar.</dd></div>
+        <div><dt>Comisión de Mercado Pago</dt><dd>Se descuenta de lo que recibís, según las condiciones de tu cuenta de Mercado Pago.</dd></div>
+      </dl>
+    </div>
+    <div class="example" data-reveal>
+      <span class="pill">Ejemplo ilustrativo</span>
+      <p class="h4 example__t">Una cata a $ 50.000</p>
+      <div class="example__row"><span class="mono">El precio que definís</span><b>$ 50.000</b></div>
+      <div class="example__row"><span class="mono">Lo que ve quien compra</span><b>$ 55.000</b><small>Precio final. Incluye el cargo por servicio de Enosfera.</small></div>
+      <div class="example__row is-accent"><span class="mono">Lo que recibís</span><b>$ 50.000</b><small>Menos la comisión de Mercado Pago.</small></div>
+      <p class="small muted">Montos ilustrativos. Los cargos y comisiones vigentes se informan antes de cada operación.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Cómo participar -->
+<section id="participar" class="section is-light section--tight-top">
+  <div class="container">
+    <div class="split-head">
+      <div>
+        <span class="eyebrow" data-reveal>Cómo participar</span>
+        <h2 class="h2" data-reveal>Empezar es muy sencillo.</h2>
+      </div>
+    </div>
+    <ol class="steps3">
+      <li class="step-card" data-reveal><span class="mono">01</span><h3 class="h5">Presentá tu proyecto</h3><p>Completá el formulario y contanos qué actividades desarrollás dentro del mundo del vino.</p></li>
+      <li class="step-card" data-reveal><span class="mono">02</span><h3 class="h5">Evaluamos tu perfil</h3><p>Revisamos cada postulación para construir una comunidad diversa y de calidad.</p></li>
+      <li class="step-card" data-reveal><span class="mono">03</span><h3 class="h5">Creá tu espacio</h3><p>Una vez aprobado tu ingreso, vas a poder configurar tu perfil y comenzar a compartir tus propuestas.</p></li>
+    </ol>
+    <p class="notice-line" data-reveal><i class="eno-icon icon-info" aria-hidden="true"></i>Durante la etapa inicial, incorporaremos nuevos participantes de manera gradual para acompañar el desarrollo de la comunidad.</p>
+  </div>
+</section>
+
+<!-- 11. Preguntas frecuentes -->
+<section id="preguntas" class="section is-light section--tight-top">
+  <div class="container faq">
+    <div class="faq__head">
+      <span class="eyebrow" data-reveal>Preguntas frecuentes</span>
+      <h2 class="h2" data-reveal>Respuestas para quienes hacen, comparten y disfrutan el vino.</h2>
+      <div data-reveal><button type="button" class="button is-dark" data-open>Sumate</button></div>
+    </div>
+    <div class="faq__list" data-reveal>
+      <details name="faq" open><summary>¿Qué es Enosfera?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Enosfera es una plataforma digital creada por y para quienes hacen, comparten y disfrutan el mundo del vino. Ofrece herramientas para compartir contenidos, desarrollar comunidades, organizar experiencias y comercializar productos y servicios.</p></div></details>
+      <details name="faq"><summary>¿Quiénes pueden participar?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Quienes hacen el vino, como bodegas, productores, fincas y comercios. Quienes lo comparten, como sommeliers, enólogos, comunicadores y docentes. Y quienes lo disfrutan y quieren descubrirlo, aprender y participar de experiencias.</p></div></details>
+      <details name="faq"><summary>¿Enosfera tiene algún costo?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>La creación de un espacio y la participación en la comunidad son gratuitas. Las condiciones y los cargos aplicables a las operaciones comerciales se informan antes de realizar cada transacción.</p></div></details>
+      <details name="faq"><summary>¿Qué requisitos necesito para comercializar?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Para comercializar propuestas pagas necesitás CUIT y una cuenta de Mercado Pago. Esos datos se solicitan recién cuando publicás tu primera propuesta paga.</p></div></details>
+      <details name="faq"><summary>¿Cómo se acreditan los pagos?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Los pagos se acreditan en tu cuenta de Mercado Pago, según el plazo de acreditación configurado en esa cuenta.</p></div></details>
+      <details name="faq"><summary>¿Cómo funcionan las compras anticipadas?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Una preventa es una modalidad de compra anticipada mediante la cual una persona adquiere un producto o servicio antes de su disponibilidad. Cada propuesta establece sus condiciones, plazos y objetivos, que se informan antes de comprar.</p></div></details>
+      <details name="faq"><summary>¿Una compra anticipada es una inversión?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>No. Se trata de una operación de compra anticipada de un producto o servicio. No implica participación societaria, rentabilidad ni promesa de retorno financiero.</p></div></details>
+      <details name="faq"><summary>¿Qué obtiene el comprador?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>El producto o servicio que ofrece cada propuesta, en las condiciones informadas. En las preventas, cada compra cuenta con un comprobante digital único que la respalda y permite gestionar el canje.</p></div></details>
+      <details name="faq"><summary>¿Puedo regalar o transferir una experiencia?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Las experiencias y determinados contenidos pueden regalarse o transferirse a otra persona dentro de Enosfera. Las condiciones de cada caso se informan en la propuesta.</p></div></details>
+      <details name="faq"><summary>¿Cómo funcionan las valoraciones?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Quienes participan de una propuesta pueden valorarla después de vivirla. Las valoraciones se muestran en el perfil de cada anfitrión o creador.</p></div></details>
+      <details name="faq"><summary>¿Qué sucede si se cancela una actividad?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Si quien la organiza cancela una actividad, se devuelve el importe total a las personas que la compraron, incluido el cargo por servicio.</p></div></details>
+      <details name="faq"><summary>¿Quién conserva los derechos sobre los contenidos?<i class="eno-icon icon-chevron-down" aria-hidden="true"></i></summary><div class="faq__a"><p>Quien publica un contenido conserva los derechos sobre él.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CTA -->
+<section class="cta">
+  <div class="cta__bg" aria-hidden="true"><img src="assets/img/portada-vina.jpg" alt="" loading="lazy"></div>
+  <div class="container cta__in">
+    <span class="eyebrow eyebrow--dark" data-reveal>El mundo del vino en tus manos</span>
+    <h2 class="cta__title" data-reveal>El mundo del vino tiene un nuevo punto de encuentro.</h2>
+    <p class="cta__text" data-reveal>Descubrí nuevas propuestas, compartí tus conocimientos, conectá con otros apasionados y formá parte de una comunidad que hace crecer el mundo del vino.</p>
+    <p class="cta__tag" data-reveal>Tu proyecto tiene un lugar en Enosfera. Sumate a construirlo.</p>
+    <div class="hero__actions" data-reveal>
+      <button type="button" class="button" data-open="proyecto">Presentá tu proyecto</button>
+      <button type="button" class="button is-secondary" data-open="miembro">Sumate como miembro</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#inicio" class="nav__logo" aria-label="Enosfera, volver al inicio">
+          <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><path d="M6.08 30 55.06 44A26 26 0 0 1 6.08 30Z" fill="var(--orange)"/><circle cx="32" cy="32" r="26" fill="none" stroke="#fff" stroke-width="6"/></svg>
+          <span>enosfera</span>
+        </a>
+        <p>Creado por y para quienes hacen, comparten y disfrutan el mundo del vino.</p>
+      </div>
+      <div class="footer__col">
+        <span class="mono">Plataforma</span>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#que-hacer">Qué podés hacer</a>
+        <a href="#preventas">Preventas</a>
+        <a href="#pagos">Pagos</a>
+      </div>
+      <div class="footer__col">
+        <span class="mono">Legales</span>
+        <a href="#terminos">Términos y condiciones</a>
+        <a href="#privacidad">Política de privacidad</a>
+        <a href="#arrepentimiento" class="footer__regret"><i class="eno-icon icon-undo-2" aria-hidden="true"></i>Botón de arrepentimiento</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Enosfera</span>
+      <span>Beber con moderación. Prohibida su venta a menores de 18 años.</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="modal" id="modal" aria-labelledby="m-t" data-lenis-prevent>
+  <div class="sheet">
+    <button type="button" class="modal__close" aria-label="Cerrar" data-close><i class="eno-icon icon-x" aria-hidden="true"></i></button>
+
+    <form class="form" id="form" novalidate>
+      <div>
+        <span class="eyebrow">Etapa inicial</span>
+        <h2 id="m-t" class="h4">Presentá tu proyecto y formá parte de Enosfera.</h2>
+        <p class="muted" id="m-intro">Queremos conocer quién sos, qué relación tenés con el mundo del vino y qué propuestas te gustaría desarrollar dentro de la comunidad.</p>
+      </div>
+
+      <div class="alert" role="alert" id="n-server" hidden><i class="eno-icon icon-circle-alert" aria-hidden="true"></i><div><b>No pudimos enviar tus datos.</b><p>Lo que completaste sigue acá. Probá de nuevo en un momento.</p></div></div>
+      <div class="alert" role="alert" id="n-fields" hidden><i class="eno-icon icon-circle-alert" aria-hidden="true"></i><div><b>Faltan algunos datos.</b><p>Revisá los campos marcados y volvé a enviar.</p></div></div>
+
+      <div class="group" role="group" aria-label="Perfil o actividad" data-field="perfil">
+        <span class="group__l">Perfil o actividad</span>
+        <div class="chips" data-chips="perfil" data-mode="single"></div>
+        <span class="hint" id="perfil-hint">¿Hacés, compartís o disfrutás el vino? Elegí la opción que mejor te describe.</span>
+        <span class="err" hidden></span>
+      </div>
+
+      <div class="form-grid">
+        <div class="eno-field" data-field="nombre"><label for="f-nombre">Nombre y apellido</label><div class="eno-field__box"><input id="f-nombre" name="nombre" autocomplete="name"></div><span class="eno-field__hint" hidden></span></div>
+        <div class="eno-field" data-field="email"><label for="f-email">Email</label><div class="eno-field__box"><input id="f-email" name="email" type="email" placeholder="nombre@ejemplo.com" autocomplete="email"></div><span class="eno-field__hint" hidden></span></div>
+        <div class="eno-field" data-field="whatsapp"><label for="f-whatsapp" id="l-whatsapp">WhatsApp</label><div class="eno-field__box"><input id="f-whatsapp" name="whatsapp" type="tel" placeholder="261 555 0123" autocomplete="tel"></div><span class="eno-field__hint" hidden></span></div>
+        <div class="group" data-field="provincia">
+          <label for="f-prov" class="group__l">Provincia</label>
+          <select id="f-prov" name="provincia" class="ctl"><option value="">Elegí tu provincia</option></select>
+          <span class="err" hidden></span>
+        </div>
+      </div>
+
+      <div class="eno-field" data-field="red" data-only="proyecto"><label for="f-red">Sitio web o redes sociales</label><div class="eno-field__box"><input id="f-red" name="red" placeholder="instagram.com/tu.proyecto o tuproyecto.com"></div><span class="eno-field__hint" hidden></span></div>
+
+      <div class="group" role="group" aria-label="Comunidad o audiencia actual" data-only="proyecto">
+        <span class="group__l">Comunidad o audiencia actual <span class="opt">Opcional.</span></span>
+        <div class="chips" data-chips="comunidad" data-mode="single"></div>
+        <span class="hint">No hay un mínimo. Nos ayuda a conocer tu proyecto.</span>
+      </div>
+
+      <div class="group" role="group" aria-labelledby="l-intereses">
+        <span class="group__l"><span id="l-intereses">¿Qué propuestas te gustaría desarrollar?</span> <span class="opt">Podés elegir más de una.</span></span>
+        <div class="chips" data-chips="intereses" data-mode="multi"></div>
+      </div>
+
+      <div class="eno-field" data-only="proyecto"><label for="f-proyecto">¿Tenés algún proyecto o lanzamiento en mente? <span class="opt">Opcional.</span></label><div class="eno-field__box"><input id="f-proyecto" name="proyecto" placeholder="Por ejemplo: una nueva línea de criolla para la cosecha 2027"></div></div>
+
+      <div class="group" data-only="proyecto">
+        <label for="f-hoy" class="group__l">¿Cómo comercializás actualmente tus productos o servicios? <span class="opt">Opcional.</span></label>
+        <textarea id="f-hoy" name="hoy" rows="2" maxlength="280" class="ctl" placeholder="Por ejemplo: organizo las catas por mensaje y cobro por transferencia."></textarea>
+      </div>
+
+      <div class="hp" aria-hidden="true"><input name="sitio" tabindex="-1" autocomplete="off"></div>
+
+      <div data-field="acepta">
+        <label class="check"><input type="checkbox" id="f-acepta" name="acepta"><span class="check__box"><i class="eno-icon icon-check" aria-hidden="true"></i></span><span>Declaro que soy mayor de 18 años y acepto la política de privacidad.</span></label>
+        <span class="err" hidden></span>
+      </div>
+
+      <div class="form__foot">
+        <button type="submit" class="button is-dark" id="submit">Enviar postulación</button>
+        <span class="hint" id="submit-note">Postularte es gratuito y no implica ningún compromiso.</span>
+      </div>
+    </form>
+
+    <div class="success" id="success" hidden>
+      <span class="success__ico"><i class="eno-icon icon-circle-check" aria-hidden="true"></i></span>
+      <h2 id="s-title" class="h4">¡Recibimos tu postulación!</h2>
+      <p class="muted" id="s-text">Vamos a leerla con atención y te responderemos por email o por WhatsApp.</p>
+      <button type="button" class="button is-terciary" data-close>Listo</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script src="assets/js/landing.js"></script>
+<script src="assets/js/motion.js"></script>
+</body>
+</html>
